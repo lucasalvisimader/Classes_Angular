@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'meu-botao',
+  selector: 'app-meu-botao',
   templateUrl: './meu-botao.component.html'
 })
 export class MeuBotaoComponent {

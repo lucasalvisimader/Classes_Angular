@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
     <!--
       Property binding nos possibilita vincular uma propriedade do componente para o template HTML.
     -->
-    <meu-botao [corTexto]="_corTexto" texto="Clique-me"></meu-botao>
+    <app-meu-botao [corTexto]="_corTexto" texto="Clique-me"></app-meu-botao>
   `
 })
 export class HomeComponent {
