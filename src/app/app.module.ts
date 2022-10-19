@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 import { AppRoutingModule } from './app-routing.module';
+import { LlamasComponent } from './pages/home/llamas/llamas.component';
+import { MoreLlamasComponent } from './pages/home/more-llamas/more-llamas.component';
+import { ClickerComponent } from './pages/home/clicker/clicker.component';
+import { InputsModule } from './pages/home/inputs/inputs.module';
 
 // Decorator ou decorador @ngModule. Usado para "Decorar" a classe e informar pro angular que elá será um módulo.
 // Um módulo no angular é a parte mais importante e a que faz tudo se comunicar e funcionar.
@@ -21,13 +25,17 @@ import { AppRoutingModule } from './app-routing.module';
     // é o BrowserModule que realiza configurações para que a aplicação rode em navegadores;
     BrowserModule,
     HomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InputsModule
   ],
 
   // A propriedade 'declarations' serve para declararmos nossos componentes. Um componente só pode ser declarado em um único módulo.
   // Nunca mais de um.
   declarations: [
-    AppComponent
+    AppComponent,
+    LlamasComponent,
+    MoreLlamasComponent,
+    ClickerComponent
   ],
 
   // A propriedade 'exports' serve para declararmos quais componentes ou serviços queremos que outras pessoas possam utilizar também.

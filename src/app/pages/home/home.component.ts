@@ -9,15 +9,9 @@ import { Component } from '@angular/core';
   // como se fosse uma tag HTML.
   selector: 'home',
   template: `
-    <h2>EXEMPLO DE COMPONENTE QUE É UM BOTÃO</h2>
     <!--
       Property binding nos possibilita vincular uma propriedade do componente para o template HTML.
     -->
-    <app-meu-botao [corTexto]="_corTexto" texto="Clique-me"></app-meu-botao>
   `
 })
-export class HomeComponent {
-
-  _corTexto = '#EB4034';
-
-}
+export class HomeComponent { }
